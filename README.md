@@ -1,6 +1,24 @@
-# KeyboardHop
+<p align="center">
+  <img src="docs/images/icon.png" alt="KeyboardHop app icon" width="128" height="128">
+</p>
 
-A tiny macOS menu bar app that reconnects your Bluetooth keyboard, mouse or trackpad the moment it becomes available, so switching a Magic Keyboard from your desktop (USB) back to your MacBook (Bluetooth) just works.
+<h1 align="center">KeyboardHop</h1>
+
+<p align="center">
+  A tiny macOS menu bar app that reconnects your Bluetooth keyboard, mouse or trackpad the moment it becomes available, so switching a Magic Keyboard from your desktop (USB) back to your MacBook (Bluetooth) just works.
+</p>
+
+<p align="center">
+  <a href="https://keyboardhop.fxtstudio.app"><b>Website</b></a> &middot;
+  <a href="https://github.com/felixt-io/KeyboardHop/releases/latest"><b>Download</b></a> &middot;
+  <a href="https://github.com/felixt-io/KeyboardHop/issues/new"><b>Report a bug</b></a>
+</p>
+
+<p align="center">
+  <img src="docs/images/app-light.png" alt="KeyboardHop in light mode" width="320">
+  <img src="docs/images/app-dark.png" alt="KeyboardHop in dark mode" width="320">
+</p>
+<p align="center"><sub>Screenshots use sample device names.</sub></p>
 
 ## Why I built this
 
@@ -33,7 +51,7 @@ KeyboardHop adds that missing piece. Unplug the keyboard from one computer and i
 
 ## Install
 
-1. Download `KeyboardHop-<version>.dmg` from Releases and drag the app to Applications.
+1. Download the latest `.dmg` from [Releases](https://github.com/felixt-io/KeyboardHop/releases/latest) and drag the app to Applications.
 2. The app is not notarized yet, so the first time right-click it and choose Open.
 3. Allow the Bluetooth permission prompt.
 4. Click the menu bar icon and switch on your devices.
@@ -60,3 +78,7 @@ Output goes to `dist/`.
 
 - No devices listed: pair them in System Settings > Bluetooth first, then click Refresh.
 - Never connects: check System Settings > Privacy & Security > Bluetooth and allow KeyboardHop.
+
+## Disclaimer
+
+Apple, Mac, macOS, Magic Keyboard, Magic Mouse and Magic Trackpad are trademarks of Apple Inc., registered in the U.S. and other countries. The Bluetooth word mark is a registered trademark owned by Bluetooth SIG, Inc. KeyboardHop is an independent project by fxtstudio. It is not affiliated with, sponsored by, or endorsed by Apple Inc. or Bluetooth SIG, Inc. Product names are used for identification and compatibility purposes only. KeyboardHop is provided "as is", without warranty of any kind, and its authors are not liable for any damages arising from its use, as set out in the [MIT License](LICENSE).
