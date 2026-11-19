@@ -28,7 +28,7 @@ KeyboardHop adds that missing piece. Unplug the keyboard from one computer and i
 - Reconnects on disconnect, on wake from sleep, and every half second while idle
 - Menu bar status icon, plus a Dock icon (on by default, can be switched off) so the app is always easy to find
 - Launch at login (on by default, can be switched off)
-- Pause switch, and a "Connect now" button
+- Pause switch, a "Connect now" button, and a "Report a bug" button that opens a prefilled GitHub issue
 - Low power use: no polling while the Mac is asleep
 
 ## Install

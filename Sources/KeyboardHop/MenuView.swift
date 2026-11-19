@@ -45,9 +45,40 @@ struct MenuView: View {
                 Spacer()
                 Button("Quit") { NSApplication.shared.terminate(nil) }
             }
+            Button {
+                BugReport.open()
+            } label: {
+                Label("Report a bug", systemImage: "ladybug")
+            }
+            .buttonStyle(.link)
         }
         .padding(14)
         .frame(width: 300)
         .onAppear { hop.refreshDevices() }
+    }
+}
+
+enum BugReport {
+    /// Opens a new GitHub issue prefilled with the app and macOS versions only (no personal data).
+    static func open() {
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "unknown"
+        let os = ProcessInfo.processInfo.operatingSystemVersionString
+        let body = """
+        **What happened?**
+
+
+        **What did you expect?**
+
+
+        **Steps to reproduce**
+
+
+        ---
+        KeyboardHop version: \(version)
+        macOS: \(os)
+        """
+        var c = URLComponents(string: "https://github.com/felixt-io/KeyboardHop/issues/new")!
+        c.queryItems = [URLQueryItem(name: "body", value: body)]
+        if let url = c.url { NSWorkspace.shared.open(url) }
     }
 }
